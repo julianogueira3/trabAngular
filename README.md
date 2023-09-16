@@ -2,7 +2,8 @@
 
 ## Visão Geral
 
-Tindoria é um projeto de aplicativo web construído com Angular, projetado para demonstrar várias funcionalidades e recursos. Este arquivo README fornece informações essenciais sobre a estrutura do projeto, as dependências e como executar e testar o aplicativo.
+Tindoria é um projeto de aplicativo web construído com Angular, projetado para demonstrar várias funcionalidades e recursos. 
+Este arquivo README fornece informações essenciais sobre a estrutura do projeto, as dependências e como executar e testar o aplicativo.
 
 ## Detalhes do Projeto
 
@@ -21,20 +22,20 @@ Antes de poder executar ou construir o aplicativo Tindoria, certifique-se de ter
 ## Instalação
 
 1. Clone o repositório Tindoria para sua máquina local.
-
-```bash
+   
 git clone <repository_url> tindoria
 cd tindoria
 Instale as dependências do projeto usando npm.
-bash
-Copy code
+
 npm install
-Scripts Disponíveis
+
 No diretório do projeto, você pode executar os seguintes scripts usando npm:
 
-npm start ou npm run ng serve: Inicia o servidor de desenvolvimento. Acesse o aplicativo em http://localhost:4200/.
+npm start ou npm run ng serve: Inicia o servidor de desenvolvimento. 
+Acesse o aplicativo em http://localhost:4200/.
 
-npm run build: Compila a versão pronta para produção do aplicativo. Os artefatos de compilação serão armazenados no diretório dist/.
+npm run build: Compila a versão pronta para produção do aplicativo. 
+Os artefatos de compilação serão armazenados no diretório dist/.
 
 npm run watch: Compila o aplicativo e monitora as alterações no modo de desenvolvimento.
 
@@ -67,13 +68,6 @@ Angular DevKit (v16.2.1): Conjunto de ferramentas de desenvolvimento para o Angu
 Angular CLI (v16.2.1): Interface de linha de comando para o Angular.
 Jasmine (v4.6.0) e Karma (v6.4.0): Frameworks de teste.
 TypeScript (v5.1.3): Um superset tipado do JavaScript.
-Iniciando
-Para começar a usar o Tindoria, siga os passos de instalação acima. Após isso, você pode usar os scripts fornecidos para executar, construir e testar o aplicativo.
-
-Para desenvolvimento adicional e personalização, explore o diretório src/ para modificar o código do aplicativo, estilos e ativos.
-
-Licença
-Este projeto não especifica uma licença. Consulte as informações de licenciamento do projeto para obter mais detalhes.
 
 Contribuidores
 Julia Nogueira
