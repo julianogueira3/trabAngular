@@ -39,45 +39,26 @@
 
   <section class="container text-center mt-5">
     <h2 class="my-5  branco" style="color: white;">Cursos Disponíveis</h2>
-    
-      <div class="row  align-items-center">
-        <!-- Curso 1 -->
-        <div class="col-xxl-3 mx-2 col-md-6 bg-preto curso-box p-0">
-            <div class="curso-box-background" style="background-image: url('assets/images/DESIGN.PNG')"></div>
-            <h3 >Design</h3>
-        </div>
-    
-        <!-- Curso 2 -->
-        <div class="col-xxl-3 mx-2 col-md-6 bg-preto curso-box p-0">
-            <div class="curso-box-background" style="background-image: url('assets/images/DESIGN.PNG')"></div>
-            <h3 >Design</h3>
-        </div>
-    
-        <!-- Curso 3 -->
-        <div class="col-xxl-3 mx-2 col-md-6 bg-preto curso-box p-0">
-            <div class="curso-box-background" style="background-image: url('assets/images/DESIGN.PNG')"></div>
-            <h3 >Design</h3>
-        </div>
-    
-        <!-- Curso 4 -->
-        <div class="col-xxl-3 mx-2 col-md-6 bg-preto curso-box p-0">
-            <div class="curso-box-background" style="background-image: url('assets/images/DESIGN.PNG')"></div>
-            <h3 >Design</h3>
+      <div class="row align-items-center justify-content-between">
+        <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
+        <div class="col-xxl-3 mx-2 col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
+          <app-curso-box [imageUrl]="'assets/images/DESIGN.PNG'" [nomeCurso]="'Design'"></app-curso-box>
         </div>
       </div>
-    
-    
-
-
   </section>
 
 
 
 
 <!-- Seção de Benefícios -->
-<section class="container">
-  <h2>Benefícios</h2>
-  <!-- Conteúdo dos benefícios aqui -->
+<section class="container text-center mt-5">
+  <h2 class="my-5  branco" style="color: white;">Benefícios</h2>
+  <div class="row align-items-center justify-content-between">
+    <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
+    <div class="col-xxl-4 mx-2 col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2]">
+      <app-box-beneficios [imageUrlBen]="'assets/images/ed.png'" [nomeBeneficio]="'Mensalidades'" [descricaoBeneficio]="'Baixo custo nas mensalidades com a Tindoria'"></app-box-beneficios>
+    </div>
+  </div>
 </section>
 
 
