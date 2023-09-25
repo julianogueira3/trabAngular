@@ -1,0 +1,67 @@
+<!-- Seu arquivo HTML -->
+<header class="bg-dark text-light py-2">
+    <div class="container d-flex justify-content-end">
+      <a routerLink="/cadastro-aluno" class="btn btn-roxo me-2">Cadastro Aluno</a>
+      <a routerLink="/cadastro-tutor" class="btn btn-roxo">Cadastro Tutor</a>
+    </div>
+  </header>
+  
+  <section class=" py-5">
+    <div class="text-center container">
+      <h1 class="display-4 branco" style="color: white;" >Bem-vindo ao Tindoria</h1>
+      <p class="lead branco " style="color: white;">Sua plataforma de tutoria</p>
+      
+      <div class="row branco">
+        <div class="col-md-4">
+          <h2 class="branco"style="color: white;">Número de Alunos</h2>
+          <p class="lead branco" style="color: white;">1000</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="branco" style="color: white;">Disciplinas</h2>
+          <p class="lead branco" style="color: white;">50</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="branco" style="color: white;">Tutores</h2>
+          <p class="lead branco" style="color: white;">200</p>
+        </div>
+      </div>
+      
+      <div class="mt-4">
+        <button class="btn btn-roxo btn-lg mx-2">Login Aluno</button>
+        <button class="btn btn-roxo btn-lg mx-2">Login Tutor</button>
+      </div>
+    </div>
+  
+  </section>
+  
+  <!-- Conteúdo da página inicial -->
+  
+  
+    <section class="container text-center mt-5">
+      <h2 class="my-5  branco" style="color: white;">Cursos Disponíveis</h2>
+        <div class="row align-items-center justify-content-between">
+          <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
+          <div class="col-xxl-3 mx-2 col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
+            <app-curso-box [imageUrl]="'assets/images/DESIGN.PNG'" [nomeCurso]="'Design'"></app-curso-box>
+          </div>
+        </div>
+    </section>
+  
+  
+  
+  
+  <!-- Seção de Benefícios -->
+  <section class="container text-center mt-5">
+    <h2 class="my-5  branco" style="color: white;">Benefícios</h2>
+    <div class="row align-items-center justify-content-between">
+      <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
+      <div class="col-xxl-4 mx-2 col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2]">
+        <app-box-beneficios [imageUrlBen]="'assets/images/ed.png'" [nomeBeneficio]="'Mensalidades'" [descricaoBeneficio]="'Baixo custo nas mensalidades com a Tindoria'"></app-box-beneficios>
+      </div>
+    </div>
+  </section>
+  
+  <app-footer></app-footer>
+  
+  
+  

@@ -1,0 +1,31 @@
+<form class=" container bg-preto" [formGroup]="alunoForm" (ngSubmit)="onSubmit()">
+    <div class="my-2 d-flex flex-column">
+        <label class=" mb-2 branco" for="nome">Nome:</label>
+        <input type="text" id="nome" formControlName="nome">
+    </div>
+
+
+    <div class="my-2 d-flex flex-column">
+        <label class=" mb-2 branco" for="email">Email:</label>
+        <input type="email" id="email" formControlName="email">
+
+    </div>
+
+
+    <div class="my-2 d-flex flex-column">
+        <label class=" mb-2 branco" for="senha">Senha:</label>
+        <input type="password" id="senha" formControlName="senha">
+
+    </div>
+
+
+    <div class="my-2 d-flex flex-column">
+        <label class=" mb-2 branco" for="senhaConfirmacao">Confirme a senha:</label>
+        <input type="password" id="senhaConfirmacao" formControlName="senhaConfirmacao">
+
+    </div>
+
+  
+    <button class="btn btn-roxo" type="submit">Cadastrar</button>
+</form>
+  
