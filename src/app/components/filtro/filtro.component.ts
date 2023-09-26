@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./filtro.component.sass']
 })
 export class FiltroComponent {
-
+  filtroVisivel = false; 
+  toggleFiltro() {
+    this.filtroVisivel = !this.filtroVisivel; 
+  }
 }

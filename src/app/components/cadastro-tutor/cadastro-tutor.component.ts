@@ -31,4 +31,11 @@ export class CadastroTutorComponent {
       console.log('Dados do Tutor:', tutorData);
     }
   }
+
+  handleFileInput(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      console.log('Arquivo selecionado:', file);
+    }
+  }
 }

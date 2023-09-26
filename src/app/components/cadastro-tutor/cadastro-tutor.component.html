@@ -12,13 +12,14 @@
     <input type="password" id="senha" formControlName="senha">
   </div>
   <div class="my-2 d-flex flex-column">
-    <label class="mb-2 branco" for="senhaConfirmacao">Confirme a senha</label>
-    <input type="password" id="senhaConfirmacao" formControlName="senhaConfirmacao">
+    <label for="anexo" class="btn btn-roxo">
+      Selecionar Anexo
+      <input type="file" id="anexo" formControlName="anexo" (change)="handleFileInput($event)" style="display: none;">
+    </label>
   </div>
-  <div class="my-2 d-flex flex-column">
-    <input class="btn btn-roxo" type="file" id="anexo" formControlName="anexo">
-  </div>
-  <button class="btn btn-roxo" type="submit">Cadastrar</button>
+  
+
+  <app-buttons [buttonType]="'submit'" [buttonClass]="'btn btn-roxo'">Cadastrar</app-buttons>
 </form>
 
 
