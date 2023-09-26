@@ -10,7 +10,18 @@ import { CadastroAlunoComponent } from './components/cadastro-aluno/cadastro-alu
 import { CadastroTutorComponent } from './components/cadastro-tutor/cadastro-tutor.component';
 import { CadastroAlunoPageComponent } from './pages/cadastro-aluno-page/cadastro-aluno-page.component';
 import { CadastroTutorPageComponent } from './pages/cadastro-tutor-page/cadastro-tutor-page.component';
-import { WelcomeComponent } from './pages/welcome/welcome.component'; 
+import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ChatPageComponent } from './pages/chat-page/chat-page.component';
+import { PerfilTutorPageComponent } from './pages/perfil-tutor-page/perfil-tutor-page.component';
+import { PerfilAlunoPageComponent } from './pages/perfil-aluno-page/perfil-aluno-page.component';
+import { HomeTutorPageComponent } from './pages/home-tutor-page/home-tutor-page.component';
+import { HomeAlunoPageComponent } from './pages/home-aluno-page/home-aluno-page.component';
+import { DisciplinaPageComponent } from './pages/disciplina-page/disciplina-page.component';
+import { FiltroComponent } from './components/filtro/filtro.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { HeaderCadastrosComponent } from './components/header-cadastros/header-cadastros.component';
+import { HeaderComponent } from './components/header/header.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +29,7 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
     BoxBeneficiosComponent,
     FooterComponent,
     CadastroAlunoComponent, 
-    CadastroTutorComponent, CadastroAlunoPageComponent, CadastroTutorPageComponent, WelcomeComponent, 
+    CadastroTutorComponent, CadastroAlunoPageComponent, CadastroTutorPageComponent, WelcomeComponent, LoginPageComponent, ChatPageComponent, PerfilTutorPageComponent, PerfilAlunoPageComponent, HomeTutorPageComponent, HomeAlunoPageComponent, DisciplinaPageComponent, FiltroComponent, ButtonsComponent, HeaderCadastrosComponent, HeaderComponent, 
   ],
   imports: [
     BrowserModule,
