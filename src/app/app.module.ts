@@ -21,7 +21,11 @@ import { DisciplinaPageComponent } from './pages/disciplina-page/disciplina-page
 import { FiltroComponent } from './components/filtro/filtro.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderCadastrosComponent } from './components/header-cadastros/header-cadastros.component';
-import { HeaderComponent } from './components/header/header.component'; 
+import { HeaderComponent } from './components/header/header.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +40,9 @@ import { HeaderComponent } from './components/header/header.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NoopAnimationsModule,
+    MatButtonModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
