@@ -9,9 +9,9 @@
   <section class=" py-5">
     <div class="text-center container">
       <h1 class="display-4 branco" style="color: white;" >Bem-vindo ao Tindoria</h1>
-      <p class="lead branco " style="color: white;">Sua plataforma de tutoria</p>
+      <p class="lead branco my-5" style="color: white;">Sua plataforma de tutoria</p>
       
-      <div class="row branco">
+      <div class="row branco my-5">
         <div class="col-md-4">
           <h2 class="branco"style="color: white;">Número de Alunos</h2>
           <p class="lead branco" style="color: white;">1000</p>
@@ -27,8 +27,8 @@
       </div>
       
       <div class="mt-4">
-        <a routerLink="/login-page" class="btn btn-roxo btn-lg mx-2">Login Aluno</a>
-        <a routerLink="/login-page" class="btn btn-roxo btn-lg mx-2">Login Tutor</a>
+        <a routerLink="/login" class="btn btn-roxo btn-lg mx-2">Login Aluno</a>
+        <a routerLink="/login" class="btn btn-roxo btn-lg mx-2">Login Tutor</a>
       </div>
     </div>
   
@@ -41,7 +41,7 @@
       <h2 class="my-5  branco" style="color: white;">Cursos Disponíveis</h2>
         <div class="row align-items-center justify-content-between">
           <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
-          <div class="col-xxl-3 mx-2 col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
+          <div class="col-xxl-3 mx-md-2 mx-auto col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
             <app-curso-box [imageUrl]="'assets/images/DESIGN.PNG'" [nomeCurso]="'Design'"></app-curso-box>
           </div>
         </div>
@@ -55,7 +55,7 @@
     <h2 class="my-5  branco" style="color: white;">Benefícios</h2>
     <div class="row align-items-center justify-content-between">
       <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
-      <div class="col-xxl-4 mx-2 col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2]">
+      <div class="col-xxl-4 mx-md-2 mx-auto col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
         <app-box-beneficios [imageUrlBen]="'assets/images/ed.png'" [nomeBeneficio]="'Mensalidades'" [descricaoBeneficio]="'Baixo custo nas mensalidades com a Tindoria'"></app-box-beneficios>
       </div>
     </div>

@@ -1,0 +1,22 @@
+$preto: #2B2B2B;
+$preto-2: #3B3B3B;
+$roxo: #A259FF;
+$branco: #ffffff;
+
+.btn-roxo {
+  background-color: $roxo;
+}
+
+input{
+  height: 40px;
+}
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+label {
+  color: $branco;
+}

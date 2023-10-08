@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-curso-box',
   templateUrl: './curso-box.component.html',
-  styleUrls: ['./curso-box.component.sass']
+  styleUrls: ['./curso-box.component.scss']
 })
 
 export class CursoBoxComponent {

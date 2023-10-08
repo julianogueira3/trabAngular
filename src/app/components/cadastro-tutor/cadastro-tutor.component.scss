@@ -1,0 +1,19 @@
+$preto: #2B2B2B;
+$preto-2: #3B3B3B;
+$roxo: #A259FF;
+$branco: #ffffff;
+
+.btn-roxo {
+  background-color: $roxo;
+}
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+label {
+  color: $branco;
+}

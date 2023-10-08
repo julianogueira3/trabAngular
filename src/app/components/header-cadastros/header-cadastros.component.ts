@@ -4,12 +4,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header-cadastros',
   templateUrl: './header-cadastros.component.html',
-  styleUrls: ['./header-cadastros.component.sass']
+  styleUrls: ['./header-cadastros.component.scss']
 })
 export class HeaderCadastrosComponent {
   constructor(private router: Router) {}
 
-  redirectToHome() {
+  redirectToWelcome() {
     // Adicione o código para redirecionar para a página "Home"
     this.router.navigate(['/']);
   }

@@ -1,0 +1,82 @@
+/* chat.component.css */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-header {
+  background-color: #663399; /* Roxo */
+  color: #fff; /* Branco */
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 40px; /* Ajuste o tamanho da foto de perfil conforme necessário */
+  height: 40px; /* Ajuste o tamanho da foto de perfil conforme necessário */
+  border-radius: 50%; /* Para tornar a imagem circular, se desejado */
+  margin-right: 10px; /* Espaçamento entre a foto de perfil e as informações do usuário */
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.user-status {
+  font-size: 14px; /* Ajuste o tamanho da fonte do status conforme necessário */
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  margin: 33px; /* Centralizar no centro da tela */
+}
+
+.message {
+  background-color: #f5f5f5; /* Cinza claro */
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  max-width: 300px; /* Largura máxima de 70% do container */
+}
+
+.message.sender {
+  background-color: #e6e6ff; /* Roxo claro */
+  align-self: flex-end; /* Alinhar à direita */
+  max-width: 300px;
+}
+
+.message-content {
+  word-wrap: break-word;
+}
+
+.message-input {
+  padding: 8px;
+  border: none;
+  border-top: 1px solid #ccc;
+  
+  /* Adicione as seguintes propriedades para fixar o elemento na parte inferior */
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Para ocupar a largura completa do container */
+}
+
+$preto: #2B2B2B;
+$preto-2: #3B3B3B;
+$roxo: #A259FF;
+$branco: #ffffff;
+
+
+.btn-roxo {
+  background-color: $roxo;
+}

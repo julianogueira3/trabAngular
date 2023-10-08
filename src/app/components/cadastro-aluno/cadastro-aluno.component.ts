@@ -5,7 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-cadastro-aluno',
   templateUrl: './cadastro-aluno.component.html',
-  styleUrls: ['./cadastro-aluno.component.sass']
+  styleUrls: ['./cadastro-aluno.component.scss']
 })
 export class CadastroAlunoComponent {
   nome: string = '';
