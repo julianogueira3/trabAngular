@@ -5,6 +5,7 @@ import { CadastroTutorPageComponent } from './pages/cadastro-tutor-page/cadastro
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { PerfilTutorPageComponent } from './pages/perfil-tutor-page/perfil-tutor-page.component';
+import { PerfilAlunoPageComponent } from './pages/perfil-aluno-page/perfil-aluno-page.component';
 import { ChatPageComponent } from './pages/chat-page/chat-page.component';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'cadastro-tutor', component: CadastroTutorPageComponent },   
   { path: 'login', component: LoginPageComponent },
   { path: 'perfil-tutor', component: PerfilTutorPageComponent },
+  { path: 'perfil-aluno', component: PerfilAlunoPageComponent },
   { path: 'chat', component: ChatPageComponent},
 
 ];

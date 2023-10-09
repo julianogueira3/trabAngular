@@ -1,37 +1,33 @@
-<!-- chat.component.html -->
-<div class="chat-container">
-  <div class="chat-header">
-      <!-- Perfil do usuário no cabeçalho -->
-      <div class="user-profile d-flex  justify-content-start align-items-center">
-          <img src="caminho_para_a_foto_de_perfil.jpg" alt="Foto de Perfil">
-          <div class="user-info">
-            <h3>Nome do Usuário</h3>
-            <span class="user-status">Online</span>
-          </div>
-
-          
-      </div>
-
-  </div>
-
-  <div class="chat-messages">
-      <!-- Mensagens -->
-      <div class="message sender">
-          <span class="message-content">Mensagem enviada à direita.</span>
-      </div>
-      <div class="message">
-          <span class="message-content">Mensagem recebida à esquerda.</span>
-      </div>
-      <!-- Adicione mais mensagens aqui -->
-  </div>
-
-  <input
-      type="text"
-      class="message-input mx-3 my-3 rounded-1 w-75"
-      placeholder="Digite sua mensagem..."
-  />
-      <div class="container d-flex justify-content-end">
-      <a routerLink="/cadastro-aluno" class="btn btn-roxo me-2">Cadastro Aluno</a>
-      <a routerLink="/cadastro-tutor" class="btn btn-roxo">Cadastro Tutor</a>
+<app-header></app-header>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="user-profile d-flex justify-content-start align-items-center">
+                <img src="caminho_para_a_foto_de_perfil.jpg" alt="Foto de Perfil">
+                <div class="user-info">
+                    <h3>Nome do Usuário</h3>
+                    <span class="user-status">Online</span>
+                </div>
+            </div>
+        </div>
+        <div class="chat-messages">
+            <div class="message sender">
+                <span class="message-content">Mensagem enviada à direita.</span>
+            </div>
+            <div class="message">
+                <span class="message-content">Mensagem recebida à esquerda.</span>
+            </div>
+            <!-- Adicione mais mensagens aqui -->
+        </div>
     </div>
-</div>
+    <div class="input-buttons-container">
+        <input
+            type="text"
+            class="message-input rounded-1 w-100"
+            placeholder="Digite sua mensagem..."
+        />
+        <div>
+            <a routerLink="/cadastro-aluno" class="btn btn-roxo "><i class='fa fa-arrow-circle-right fa-2x' style='color:white'></i></a>
+           
+        </div>
+    </div>
+    <app-footer></app-footer>

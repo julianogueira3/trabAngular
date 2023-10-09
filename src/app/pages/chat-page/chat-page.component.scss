@@ -1,8 +1,14 @@
-/* chat.component.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos do layout do chat */
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 .chat-header {
@@ -60,23 +66,32 @@
   word-wrap: break-word;
 }
 
+/* Estilos do contêiner de entrada e botões */
+.input-buttons-container {
+ 
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Certifica-se de que o contêiner fique acima do footer */
+}
+
 .message-input {
-  padding: 8px;
+  flex-grow: 1; /* Ocupa o espaço restante disponível */
+  padding: 15px;
   border: none;
   border-top: 1px solid #ccc;
-  
-  /* Adicione as seguintes propriedades para fixar o elemento na parte inferior */
-  position: fixed;
-  bottom: 0;
-  width: 100%; /* Para ocupar a largura completa do container */
+  margin-right: 8px; /* Espaçamento entre o input e o botão */
 }
 
-$preto: #2B2B2B;
-$preto-2: #3B3B3B;
-$roxo: #A259FF;
-$branco: #ffffff;
-
-
+/* Estilos dos botões */
 .btn-roxo {
-  background-color: $roxo;
+  background-color: #A259FF; /* Roxo */
+  color: #fff; /* Branco */
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
 }
+
+
+

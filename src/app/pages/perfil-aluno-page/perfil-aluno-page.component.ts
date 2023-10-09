@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./perfil-aluno-page.component.scss']
 })
 export class PerfilAlunoPageComponent {
+  public bio = 'Uma bio bem bonita'
 
 }
