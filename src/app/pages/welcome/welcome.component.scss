@@ -41,7 +41,7 @@ h1.branco {
   text-align: center;
   margin-bottom: 20px;
   min-height: 316px;
-  max-width: 300px;
+  max-width: 240px;
 
   h3 {
     color: #fff;
@@ -55,9 +55,12 @@ h1.branco {
     background-repeat: no-repeat;
     width: 100%;
     min-height: 240px;
+    max-width: 240px;
   }
 }
-
+.fs-32{
+  font-size: 32px;
+}
 body {
   background-color: $preto !important;
 }

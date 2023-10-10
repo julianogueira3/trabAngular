@@ -1,34 +1,38 @@
 <!-- Seu arquivo HTML -->
 <header class="bg-dark text-light py-2">
     <div class="container d-flex justify-content-end">
-      <a routerLink="/cadastro-aluno" class="btn btn-roxo me-2">Cadastro Aluno</a>
-      <a routerLink="/cadastro-tutor" class="btn btn-roxo">Cadastro Tutor</a>
+      <a routerLink="/cadastro-aluno" class="btn btn-roxo me-2" style="color: white;"><i class="fa fa-user" style="color: white;"></i>
+        Cadastro Aluno</a>
+      <a routerLink="/cadastro-tutor" class="btn btn-roxo" style="color: white;"><i class="fa fa-user" style="color: white;"></i>
+        Cadastro Tutor</a>
     </div>
   </header>
   
-  <section class=" py-5">
+  <section class=" my-5 py-5">
     <div class="text-center container">
       <h1 class="display-4 branco" style="color: white;" >Bem-vindo ao Tindoria</h1>
       <p class="lead branco my-5" style="color: white;">Sua plataforma de tutoria</p>
       
       <div class="row branco my-5">
         <div class="col-md-4">
-          <h2 class="branco"style="color: white;">Número de Alunos</h2>
-          <p class="lead branco" style="color: white;">1000</p>
+          <h2 class="branco"style="color: white;">1000 </h2>
+          <p class="fs-32 lead branco" style="color: white;">Alunos</p>
         </div>
         <div class="col-md-4">
-          <h2 class="branco" style="color: white;">Disciplinas</h2>
-          <p class="lead branco" style="color: white;">50</p>
+          <h2 class="branco" style="color: white;">50</h2>
+          <p class="fs-32 lead branco" style="color: white;">Disciplinas</p>
         </div>
         <div class="col-md-4">
-          <h2 class="branco" style="color: white;">Tutores</h2>
-          <p class="lead branco" style="color: white;">200</p>
+          <h2 class="branco" style="color: white;">200</h2>
+          <p class="fs-32 lead branco" style="color: white;">Tutores</p>
         </div>
       </div>
       
       <div class="mt-4">
-        <a routerLink="/login" class="btn btn-roxo btn-lg mx-2">Login Aluno</a>
-        <a routerLink="/login" class="btn btn-roxo btn-lg mx-2">Login Tutor</a>
+        <a routerLink="/login" class="btn btn-roxo btn-lg mx-2" style="color: white;"><i class="fa fa-user"></i>
+Login Aluno</a>
+        <a routerLink="/login" class="btn btn-roxo btn-lg mx-2" style="color: white;"><i class="fa fa-user"></i>
+Login Tutor</a>
       </div>
     </div>
   
@@ -40,8 +44,7 @@
     <section class="container text-center mt-5">
       <h2 class="my-5  branco" style="color: white;">Cursos Disponíveis</h2>
         <div class="row align-items-center justify-content-between">
-          <!-- Usar *ngFor para criar quatro instâncias do componente app-curso-box -->
-          <div class="col-xxl-3 mx-md-2 mx-auto col-md-6 p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
+          <div class="col-lg-3  p-0 bg-preto curso-box" *ngFor="let i of [0, 1, 2, 3]">
             <app-curso-box [imageUrl]="'assets/images/DESIGN.PNG'" [nomeCurso]="'Design'"></app-curso-box>
           </div>
         </div>
