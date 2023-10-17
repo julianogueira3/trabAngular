@@ -1,32 +1,35 @@
 <app-header></app-header>
 <div class="pictures-conteiner">
     <div class="cover">PlaceholderCover</div>
-    <div class="profile-pic">FotodePerfil</div>
+    <div class="mx-5 buttons-container d-flex justify-content-end">
+        <a href="/list-chat " class="chat-button">+ Chat</a>
+        <button class="edit-button">Editar Perfil</button>
+    </div>
+    <div class="profile-pic">
+        FotodePerfil
+    
+    </div>
+ 
 </div>
+
 
 <div class="info-container">
     <div class="titulo">
         <span>Nome</span>
     </div>
-    <div class="mx-5 buttons-container">
-        <button class="chat-button">+ Chat</button>
-        <button class="edit-button">Editar Perfil</button>
-    </div>
+
     
     <div class="dados">
         <div class="estatisticas">
             <div class="numeros">
                 <b>1k+</b><br> Seguidores
             </div>
-            <div class="numeros">
-                <b>30+</b><br> Materiais
-            </div>
         </div>
 
         <div class="bio-container">
             <div class="bio">
                 <span>Bio</span>
-                <button mat-stroked-button>Editar</button>
+                <button class="d-none btn-editar" mat-stroked-button>Editar</button>
             </div>
             <div class="bio-description">{{ bio }}</div>
         </div>
@@ -34,7 +37,7 @@
         <div class="bio-container">
             <div class="bio">
                 <span>Links</span>
-                <button mat-stroked-button>Editar</button>
+                <button class="d-none btn-editar" mat-stroked-button>Editar</button>
             </div>
             <div class="link-container">
                 <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">

@@ -27,6 +27,8 @@ import { HeaderCadastrosComponent } from './components/header-cadastros/header-c
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderLoginComponent } from './components/header-login/header-login.component';
+import { ChatListComponent } from './components/chat-list/chat-list.component';
+import { ListChatPageComponent } from './pages/list-chat-page/list-chat-page.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { HeaderLoginComponent } from './components/header-login/header-login.com
     HeaderComponent,
     LoginComponent,
     HeaderLoginComponent,
+    ChatListComponent,
+    ListChatPageComponent,
   ],
   imports: [
     BrowserModule,
