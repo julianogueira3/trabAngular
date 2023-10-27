@@ -21,7 +21,8 @@ import { DisciplinaPageComponent } from './pages/disciplina-page/disciplina-page
 import { FiltroComponent } from './components/filtro/filtro.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderCadastrosComponent } from './components/header-cadastros/header-cadastros.component';
-import { HeaderComponent } from './components/header/header.component'; 
+import { HeaderComponent } from './components/header/header.component';
+import { ChatComponent } from './chat/chat.component'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,7 @@ import { HeaderComponent } from './components/header/header.component';
     BoxBeneficiosComponent,
     FooterComponent,
     CadastroAlunoComponent, 
-    CadastroTutorComponent, CadastroAlunoPageComponent, CadastroTutorPageComponent, WelcomeComponent, LoginPageComponent, ChatPageComponent, PerfilTutorPageComponent, PerfilAlunoPageComponent, HomeTutorPageComponent, HomeAlunoPageComponent, DisciplinaPageComponent, FiltroComponent, ButtonsComponent, HeaderCadastrosComponent, HeaderComponent, 
+    CadastroTutorComponent, CadastroAlunoPageComponent, CadastroTutorPageComponent, WelcomeComponent, LoginPageComponent, ChatPageComponent, PerfilTutorPageComponent, PerfilAlunoPageComponent, HomeTutorPageComponent, HomeAlunoPageComponent, DisciplinaPageComponent, FiltroComponent, ButtonsComponent, HeaderCadastrosComponent, HeaderComponent, ChatComponent, 
   ],
   imports: [
     BrowserModule,
