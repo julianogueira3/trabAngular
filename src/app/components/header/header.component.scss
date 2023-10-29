@@ -1,0 +1,24 @@
+.button{
+    color: #fff !important;
+}
+
+ 
+.button-raised{ 
+    display: flex;
+    height: 40px;
+    width: 120px;
+    padding: 0px 10px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #A259FF !important;
+    font-size: 15px;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 50px;
+}

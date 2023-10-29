@@ -1,0 +1,97 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos do layout do chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.chat-header {
+  background-color: #663399; /* Roxo */
+  color: #fff; /* Branco */
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 40px; /* Ajuste o tamanho da foto de perfil conforme necessário */
+  height: 40px; /* Ajuste o tamanho da foto de perfil conforme necessário */
+  border-radius: 50%; /* Para tornar a imagem circular, se desejado */
+  margin-right: 10px; /* Espaçamento entre a foto de perfil e as informações do usuário */
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.user-status {
+  font-size: 14px; /* Ajuste o tamanho da fonte do status conforme necessário */
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  margin: 33px; /* Centralizar no centro da tela */
+}
+
+.message {
+  background-color: #f5f5f5; /* Cinza claro */
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  max-width: 300px; /* Largura máxima de 70% do container */
+}
+
+.message.sender {
+  background-color: #e6e6ff; /* Roxo claro */
+  align-self: flex-end; /* Alinhar à direita */
+  max-width: 300px;
+}
+
+.message-content {
+  word-wrap: break-word;
+}
+
+/* Estilos do contêiner de entrada e botões */
+.input-buttons-container {
+ 
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Certifica-se de que o contêiner fique acima do footer */
+}
+
+.message-input {
+  flex-grow: 1; /* Ocupa o espaço restante disponível */
+  padding: 15px;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-right: 8px; /* Espaçamento entre o input e o botão */
+}
+
+/* Estilos dos botões */
+.btn-roxo {
+  background-color: #A259FF; /* Roxo */
+  color: #fff; /* Branco */
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+

@@ -1,0 +1,9 @@
+<div>
+    <h1>Lista de Chats</h1>
+    <ul>
+      <li *ngFor="let chat of chats">
+        <a [routerLink]="['/chat', chat.id]">{{ chat.name }}</a>
+      </li>
+    </ul>
+  </div>
+  

@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-cadastro-tutor',
   templateUrl: './cadastro-tutor.component.html',
-  styleUrls: ['./cadastro-tutor.component.sass']
+  styleUrls: ['./cadastro-tutor.component.scss']
 })
 export class CadastroTutorComponent {
   nome: string = '';

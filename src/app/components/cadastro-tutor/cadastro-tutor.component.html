@@ -1,20 +1,36 @@
-<form class="container bg-preto" [formGroup]="tutorForm" (ngSubmit)="onSubmit()">
+<form class="container bg-preto d-flex flex-column w-50 text-center" [formGroup]="tutorForm" (ngSubmit)="onSubmit()">
   <div class="my-2 d-flex flex-column">
     <label class="mb-2 branco" for="nome">Nome</label>
-    <input type="text" id="nome" formControlName="nome">
+    <input class="rounded-pill" type="text" id="nome" formControlName="nome">
   </div>
   <div class="my-2 d-flex flex-column">
     <label class="mb-2 branco" for="email">Email</label>
-    <input type="email" id="email" formControlName="email">
+    <input class="rounded-pill" type="email" id="email" formControlName="email">
   </div>
   <div class="my-2 d-flex flex-column">
     <label class="mb-2 branco" for="senha">Senha</label>
-    <input type="password" id="senha" formControlName="senha">
+    <input class="rounded-pill" type="password" id="senha" formControlName="senha">
   </div>
   <div class="my-2 d-flex flex-column">
-    <label for="anexo" class="btn btn-roxo">
+    <label class=" mb-2 branco" for="senhaConfirmacao">Confirme a senha:</label>
+    <input class="rounded-pill" type="password" id="senhaConfirmacao" formControlName="senhaConfirmacao">
+
+</div>
+
+<div class="my-2 d-flex flex-column">
+  <label class="mb-2 branco" for="diciplina">Diciplina:</label>
+  <input class="rounded-pill" type="text" id="diciplina" formControlName="diciplina">
+</div>
+
+<div class="my-2 d-flex flex-column">
+  <label class="mb-2 branco" for="instituicao">Instituição de ensino:</label>
+  <input class="rounded-pill" type="text" id="instituicao" formControlName="instituicao">
+</div>
+
+  <div class="my-2 d-flex flex-column">
+    <label for="anexo" class="btn btn-roxo ">
       Selecionar Anexo
-      <input type="file" id="anexo" formControlName="anexo" (change)="handleFileInput($event)" style="display: none;">
+      <input class="rounded-pill" type="file" id="anexo" formControlName="anexo" (change)="handleFileInput($event)" style="display: none;">
     </label>
   </div>
   

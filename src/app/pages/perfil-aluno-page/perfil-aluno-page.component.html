@@ -1,1 +1,65 @@
-<p>perfil-aluno-page works!</p>
+<app-header></app-header>
+<div class="pictures-conteiner">
+    <div class="cover">PlaceholderCover</div>
+    <div class="mx-5 buttons-container d-flex justify-content-end">
+        <a href="/list-chat " class="chat-button">+ Chat</a>
+        <button class="edit-button">Editar Perfil</button>
+    </div>
+    <div class="profile-pic">
+        FotodePerfil
+    
+    </div>
+ 
+</div>
+
+
+<div class="info-container">
+    <div class="titulo">
+        <span>Nome</span>
+    </div>
+
+    
+    <div class="dados">
+        <div class="estatisticas">
+            <div class="numeros">
+                <b>1k+</b><br> Seguidores
+            </div>
+        </div>
+
+        <div class="bio-container">
+            <div class="bio">
+                <span>Bio</span>
+                <button class="d-none btn-editar" mat-stroked-button>Editar</button>
+            </div>
+            <div class="bio-description">{{ bio }}</div>
+        </div>
+    
+        <div class="bio-container">
+            <div class="bio">
+                <span>Links</span>
+                <button class="d-none btn-editar" mat-stroked-button>Editar</button>
+            </div>
+            <div class="link-container">
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                    <img src="../../../assets/icons/globe.png" alt="">
+                </button>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                    <img src="../../../assets/icons/DiscordLogo.png" alt="">
+                </button>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                    <img src="../../../assets/icons/YoutubeLogo.png" alt="">
+                </button>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                    <img src="../../../assets/icons/TwitterLogo.png" alt="">
+                </button>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                    <img src="../../../assets/icons/InstagramLogo.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<mat-divider></mat-divider>
+
+<app-footer></app-footer>

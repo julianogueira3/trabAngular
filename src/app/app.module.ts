@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importe BrowserAnimationsModule
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CursoBoxComponent } from './components/curso-box/curso-box.component';
@@ -21,32 +24,22 @@ import { DisciplinaPageComponent } from './pages/disciplina-page/disciplina-page
 import { FiltroComponent } from './components/filtro/filtro.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderCadastrosComponent } from './components/header-cadastros/header-cadastros.component';
-import { HeaderComponent } from './components/header/header.component';
-
+import { HeaderComponent } from './components/header/header.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     CursoBoxComponent,
     BoxBeneficiosComponent,
     FooterComponent,
-    CadastroAlunoComponent,
-    CadastroTutorComponent,
-    CadastroAlunoPageComponent,
-    CadastroTutorPageComponent,
-    WelcomeComponent,
-    LoginPageComponent,
-    ChatPageComponent,
-    PerfilTutorPageComponent,
-    PerfilAlunoPageComponent,
-    HomeTutorPageComponent,
-    HomeAlunoPageComponent,
-    DisciplinaPageComponent,
-    FiltroComponent,
-    ButtonsComponent,
-    HeaderCadastrosComponent,
-    HeaderComponent,
+    CadastroAlunoComponent, 
+    CadastroTutorComponent, CadastroAlunoPageComponent, CadastroTutorPageComponent, WelcomeComponent, LoginPageComponent, ChatPageComponent, PerfilTutorPageComponent, PerfilAlunoPageComponent, HomeTutorPageComponent, HomeAlunoPageComponent, DisciplinaPageComponent, FiltroComponent, ButtonsComponent, HeaderCadastrosComponent, HeaderComponent, 
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
