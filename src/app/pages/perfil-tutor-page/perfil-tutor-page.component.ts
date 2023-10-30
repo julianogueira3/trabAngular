@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./perfil-tutor-page.component.scss']
 })
 export class PerfilTutorPageComponent {
-
-  public bio = 'Uma bio bem bonita'
+  public cadeiras = 11;
+  public bio = 'Uma bio bem bonita';
+  public notas = 0;
 }

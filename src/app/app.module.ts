@@ -24,7 +24,13 @@ import { DisciplinaPageComponent } from './pages/disciplina-page/disciplina-page
 import { FiltroComponent } from './components/filtro/filtro.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { HeaderCadastrosComponent } from './components/header-cadastros/header-cadastros.component';
-import { HeaderComponent } from './components/header/header.component'; 
+import { HeaderComponent } from './components/header/header.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatChipsModule} from '@angular/material/chips';
+import { LoginComponent } from './components/login/login.component';
+import { HeaderLoginComponent } from './components/header-login/header-login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,13 +38,37 @@ import { HeaderComponent } from './components/header/header.component';
     BoxBeneficiosComponent,
     FooterComponent,
     CadastroAlunoComponent, 
-    CadastroTutorComponent, CadastroAlunoPageComponent, CadastroTutorPageComponent, WelcomeComponent, LoginPageComponent, ChatPageComponent, PerfilTutorPageComponent, PerfilAlunoPageComponent, HomeTutorPageComponent, HomeAlunoPageComponent, DisciplinaPageComponent, FiltroComponent, ButtonsComponent, HeaderCadastrosComponent, HeaderComponent, 
+    CadastroTutorComponent,
+    CadastroAlunoPageComponent, 
+    CadastroTutorPageComponent, 
+    WelcomeComponent, 
+    LoginPageComponent, 
+    ChatPageComponent, 
+    PerfilTutorPageComponent, 
+    PerfilAlunoPageComponent, 
+    HomeTutorPageComponent, 
+    HomeAlunoPageComponent, 
+    DisciplinaPageComponent, 
+    FiltroComponent, 
+    ButtonsComponent, 
+    HeaderCadastrosComponent, 
+    HeaderComponent,
+    LoginPageComponent,
+    LoginComponent,
+    HeaderLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCardModule,
+    MatTabsModule,
+    MatChipsModule,
+    MatDividerModule,
+    BrowserAnimationsModule,
+    MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

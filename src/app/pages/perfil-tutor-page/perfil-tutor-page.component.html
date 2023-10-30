@@ -59,3 +59,35 @@
 </div>
 
 <mat-divider></mat-divider>
+
+<h3>No animation</h3>
+
+<mat-tab-group animationDuration="0ms">
+  <mat-tab>
+    <ng-template mat-tab-label>
+        Cadeiras 
+        <mat-chip class="example-box"
+                  cdkDrag>
+            {{cadeiras}}
+        </mat-chip>
+    </ng-template>
+    <mat-card class="example-card">
+  
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-header>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        </mat-card-header>
+    </mat-card>  
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+        Notas e Certificados
+        <mat-chip class="example-box"
+                  cdkDrag>
+            {{notas}}
+        </mat-chip>
+    </ng-template>  
+  </mat-tab>
+</mat-tab-group>
+
+<app-footer></app-footer>

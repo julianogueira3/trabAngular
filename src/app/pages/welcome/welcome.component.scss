@@ -16,7 +16,7 @@ p{
 }
 
 body {
-  background-color: $preto;
+  background-color: $preto-2;
 }
 
 h1.branco {
@@ -24,7 +24,7 @@ h1.branco {
 }
 
 .bg-dark {
-  background-color: $preto;
+  background-color: $preto-2;
 }
 
 .bg-preto {
@@ -62,6 +62,6 @@ h1.branco {
   font-size: 32px;
 }
 body {
-  background-color: $preto !important;
+  background-color: $preto-2 !important;
 }
 

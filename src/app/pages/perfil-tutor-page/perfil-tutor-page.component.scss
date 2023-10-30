@@ -81,6 +81,7 @@
                 min-width: 45px;
                 height: 20px;
                 margin-left: 18px;
+                color: white;
             }
         }
         .bio-description{
@@ -105,4 +106,36 @@
 
 mat-divider {
     color: #858584;
+}
+
+mat-tab {
+      
+}
+
+mat-chip{
+    margin-left: 10px;
+} 
+
+mat-card{
+    width: 330px;
+    height: 400px;
+    border-radius: 20px;
+
+    .mat-mdc-card-header{
+        background-color: gray;
+        height: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    } 
+    .mat-mdc-card-title, .mat-mdc-card-subtitle{
+        color:white;
+    }
+}
+
+::ng-deep.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+    color:white !important;
+} 
+
+::ng-deep.mat-mdc-tab .mdc-tab__text-label  {
+    color: gray !important;
 }

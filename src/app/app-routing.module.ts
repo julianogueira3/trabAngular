@@ -23,6 +23,8 @@ const routes: Routes = [
   { path: 'list-chat', component: ListChatPageComponent},
   { path: 'home-tutor', component: HomeTutorPageComponent },
   { path: 'home-aluno', component: HomeAlunoPageComponent },
+  { path: 'cadastro-tutor', component: CadastroTutorPageComponent },
+  { path: 'perfil-tutor', component: PerfilTutorPageComponent },
 ];
 
 @NgModule({
